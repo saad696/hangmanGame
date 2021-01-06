@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Hangman</title>
 </head>
 <body id="body-bg">
@@ -29,83 +30,6 @@
                     <div id="keyboard"></div>
                 </div>
             </div>
-        </section>
-        <style>
-            body{
-                background-color: burlywood; 
-            }
-
-            .word-container{
-                background-color: #cecece; 
-                border: 2px solid black; 
-                margin-bottom: 1rem;
-            }
-
-            .img-container{
-                background: url("images/desertBg.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border: 2px solid black;
-                border-bottom: none;
-            }
-
-            .won{
-                animation: win-background 4s infinite alternate;
-            }
-
-            .lost{
-                animation: lost-background 4s infinite alternate;
-            }
-
-            @keyframes win-background {
-                0% {
-                    background-color: #05f29b;
-                }
-
-                30%{
-                    background-color: #04cc82;
-                }
-
-                60% {
-                    background-color: #03a56a;
-                }
-
-                90% {
-                    background-color: #037f51;
-                }
-
-                100% {
-                    background-color: #026c45;
-                }
-
-                
-            }
-            @keyframes lost-background {
-                0% {
-                    background-color: #ff0000;
-                }
-
-                30%{
-                    background-color: #d80000;
-                }
-
-                60% {
-                    background-color: #b10000;
-                }
-
-                90% {
-                    background-color:#9d0000;
-                }
-
-                100% {
-                    background-color: #890000;
-                }
-
-                
-            }
-        </style>
-        
-        
+        </section>  
 </body>
 </html>
