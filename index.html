@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <script src="app.js" defer></script>
+    <title>Hangman</title>
+</head>
+<body id="body-bg">
+        <section class="section">
+            <div class="container">
+                <h1 class="title has-text-centered">The Hangman Game</h1><hr>
+                <div class="container" id="counter-container">
+                    <div class="has-text-centered my-4 subtitle has-text-danger-dark has-background-light py-3 px-6" id="score-counter">Wrong Guesses <span id="wrong-guesses">0</span> of <span id="total-wrong-guesses"></span></div>
+                </div>
+                <div class="has-text-centered px-6">
+                <div class="container img-container">
+                    <img src="images/0.jpg" alt="initial-hangman-img" id="hangman-img">
+                </div>
+                <div class="word-container py-3">
+                    <p>Guess the color:</p>
+                <p id="words-display"></p>
+               <button class="button is-primary mt-4" onclick="reset()">Reset</button>
+                </div>
+            </div>
+                <div class="has-text-centered">
+                    <div id="keyboard"></div>
+                </div>
+            </div>
+        </section>
+        <style>
+            body{
+                background-color: burlywood; 
+            }
+
+            .word-container{
+                background-color: #cecece; 
+                border: 2px solid black; 
+                margin-bottom: 1rem;
+            }
+
+            .img-container{
+                background: url("images/desertBg.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 2px solid black;
+                border-bottom: none;
+            }
+
+            .won{
+                animation: win-background 4s infinite alternate;
+            }
+
+            .lost{
+                animation: lost-background 4s infinite alternate;
+            }
+
+            @keyframes win-background {
+                0% {
+                    background-color: #05f29b;
+                }
+
+                30%{
+                    background-color: #04cc82;
+                }
+
+                60% {
+                    background-color: #03a56a;
+                }
+
+                90% {
+                    background-color: #037f51;
+                }
+
+                100% {
+                    background-color: #026c45;
+                }
+
+                
+            }
+            @keyframes lost-background {
+                0% {
+                    background-color: #ff0000;
+                }
+
+                30%{
+                    background-color: #d80000;
+                }
+
+                60% {
+                    background-color: #b10000;
+                }
+
+                90% {
+                    background-color:#9d0000;
+                }
+
+                100% {
+                    background-color: #890000;
+                }
+
+                
+            }
+        </style>
+        
+        
+</body>
+</html>
