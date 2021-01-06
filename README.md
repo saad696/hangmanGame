@@ -5,4 +5,4 @@ Guess the correct color name to win.
 You get 6 attempts until the guy is up the rope completely.
 
 to run this file first run index.html in you device.
-Or directly run through this link - 
+Or directly run through this link - https://saad696.github.io/hangmanGame/
